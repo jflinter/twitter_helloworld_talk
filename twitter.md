@@ -5,21 +5,21 @@
 
 ---
 
-![100%](stripe.png)
+![100%](images/stripe.png)
 
 ^ Talk a little bit about Stripe
 
 ---
 
-![fit 25%](relay.png)
+![fit 25%](images/relay.png)
 
 ---
 
-![](fabric.png)
+![](images/fabric.png)
 
 ---
 
-![inline](dashboard_framed.png)
+![inline](images/dashboard_framed.png)
 
 ^ Not here to talk about that - wanted to think about "realtime"
 ^ So, Stripe has an iOS dashboard app that I work on. If you have a business on Stripe, it lets you keep tabs on it in real time. You can watch, or get notified, as new payments come in and new customers sign up for your service.
@@ -32,7 +32,7 @@
 bind(label.text, currentUser.dailyRevenue) // easy!
 ```
 
-![inline](dashboard_volume.png)
+![inline](images/dashboard_volume.png)
 
 ^ So, I said that this app lets you monitor your business in real time. What does this actually mean?
 ^ It dynamically adjusts to changing values over time.
@@ -42,7 +42,7 @@ bind(label.text, currentUser.dailyRevenue) // easy!
 
 ---
 
-![inline](dashboard_activity.png)
+![inline](images/dashboard_activity.png)
 
 ```swift
 bind(tableView.rows, currentUser.recentEvents) // not as easy.
