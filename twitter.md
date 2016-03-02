@@ -18,7 +18,7 @@
 
 ![](images/fabric.png)
 
-^ We also worked with Twitter as part of their launch of third-party SDKs in Fabric. So if you're looking to integrate Stripe into your iOS app, you can do so with just a few clicks.
+^ As Ali mentioned, we also worked with Twitter as part of their launch of third-party SDKs in Fabric. So if you're looking to integrate Stripe into your iOS app, you can do so with just a few clicks.
 
 ^ But instead of talking about these huge awesome things, I'm not really going to talk about Stripe during this talk. I hope I don't get chewed out for this. Instead, I'm going to use this huge awesome stage to talk about something really small and, honestly, kind of random-seeming. Then I'm going to talk about how we used it to build something super useful, and maybe - *just* maybe - even relevant for a talk that's supposed to be about realtime apps.
 
@@ -68,7 +68,7 @@ $$
 <br>
 `// I shamelessly stole this from Wikipedia`
 
-^ So I have this terrifying LaTEX formula that I stole from Wikipedia that actually isn't that scary. We have a piecewise function.
+^ So I have this terrifying LaTEX formula that I stole from Wikipedia that actually isn't that scary. We have a piecewise function, that has two inputs X and Y, for our two sequences. If X or Y is empty, we return the empty set. Duh. If not, if X or Y have the same last element, we'll return the LCS of the subset of 
 
 ---
 
@@ -125,7 +125,7 @@ func lcs<T: Equatable>(x: [T], _ y: [T], _ i: Int, _ j: Int) -> [T] {
 
 - `reloadData`
 
-^ Ok, so for this event feed we use a class called `UITableView`. This class is like 60% of the UI of every iOS app.
+^ Ok, so for this event feed we use a class called `UITableView`. This class is like 60% of the UI of every iOS app. Alex and Emily used it a bunch in their see the city app.
 ^ It has this method, reloadData, which does exactly what it sounds like it does. We can fetch data from our server, and turn that JSON array into a bunch of row values, then tell the tableView to use these rows as its new data source, and then call reloadData on it. After writing a few apps, you basically just develop the muscle memory to do this. Like, basically every app I've written has this code in it. But, unfortunately, reloadData is kinf of a not-so-great method. It reloads the entire table, which can cause it to flicker and be slow to draw. It'll also make your user lose their scroll position.
 
 ---
@@ -163,7 +163,7 @@ func lcs<T: Equatable>(x: [T], _ y: [T], _ i: Int, _ j: Int) -> [T] {
 
 ![left 60%](images/stuff.gif)
 
-# Questions?
+# Thank you
 ## @jflinter
 
 ## `https://github.com/jflinter/twitter_helloworld_talk`
